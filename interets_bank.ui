@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>30</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 30pt &quot;Arial&quot;;
+color:rgb(255, 255, 255);
+background-color: rgb(99, 115, 255)</string>
+   </property>
+   <property name="text">
+    <string>Interest bank calculation</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_calculate">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>334</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:rgb(106, 166, 255);
+	border-radius:10px;
+	font:10pt;
+	font-family:Arial;
+	color:white;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 170, 127);
+}</string>
+   </property>
+   <property name="text">
+    <string>Calculate</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="b_delete">
+   <property name="geometry">
+    <rect>
+     <x>532</x>
+     <y>334</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color:rgb(255, 115, 105);
+	border-radius:10px;
+	font:10pt;
+	font-family:Arial;
+	color:white;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 170, 127);
+}</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_capital">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>124</y>
+     <width>280</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	background-color:#F8EAFF;
+	border:2px solid #803CE0;
+	border-radius:10px;
+	color:#803CE0;
+	font-family:Arial;
+	font:10pt	
+}
+
+QLineEdit:focus{
+	border:2px solid #FBAD25;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>119</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:11pt&quot;Arial&quot;;
+color:#803CE0;</string>
+   </property>
+   <property name="text">
+    <string>Capital ($)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>192</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:11pt&quot;Arial&quot;;
+color:#803CE0;</string>
+   </property>
+   <property name="text">
+    <string>Percentage (%)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_pourcentage">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>197</y>
+     <width>280</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	background-color:#F8EAFF;
+	border:2px solid #803CE0;
+	border-radius:10px;
+	color:#803CE0;
+	font-family:Arial;
+	font:10pt	
+}
+
+QLineEdit:focus{
+	border:2px solid #FBAD25;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_duree">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>272</y>
+     <width>280</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	background-color:#F8EAFF;
+	border:2px solid #803CE0;
+	border-radius:10px;
+	color:#803CE0;
+	font-family:Arial;
+	font:10pt	
+}
+
+QLineEdit:focus{
+	border:2px solid #FBAD25;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="result_capital">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>430</y>
+     <width>260</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>11</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	background-color:#F8EAFF;
+	border:2px solid #803CE0;
+	border-radius:10px;
+	color:#803CE0;		
+	font: 75 11pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QLineEdit:focus{
+	border:2px solid #FBAD25;
+}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>405</y>
+     <width>231</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:11pt&quot;Arial&quot;;
+color:#803CE0;</string>
+   </property>
+   <property name="text">
+    <string>Capital with interest</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>266</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:11pt&quot;Arial&quot;;
+color:#803CE0;</string>
+   </property>
+   <property name="text">
+    <string>Time (days)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="error">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>290</y>
+     <width>269</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 85, 0);
+font: 8pt &quot;Arial&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
